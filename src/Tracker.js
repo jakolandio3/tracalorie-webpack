@@ -39,7 +39,7 @@ class CalorieTracker {
 	// removing meal and workouts
 	removeMeal(id) {
 		const index = this._meals.findIndex((meal) => meal.id === id); // finding the right match we called for
-		if (index != -1) {
+		if (index !== -1) {
 			//checking it exists
 			const meal = this._meals[index];
 			this._totalCalories -= meal.calories; //taking out of the calories

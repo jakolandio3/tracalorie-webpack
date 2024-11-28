@@ -81,7 +81,7 @@ class App {
 			e.target.classList.contains('delete') ||
 			e.target.classList.contains('fa-xmark')
 		) {
-			if (confirm('Are you sure?')) {
+			if (window.confirm('Are you sure?')) {
 				const id = e.target.closest('.card').getAttribute('data-id');
 				type === 'meal'
 					? this._tracker.removeMeal(id)
